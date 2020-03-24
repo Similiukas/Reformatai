@@ -1,0 +1,384 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: AnotherDanger;
+  src: url("../Font/Another Danger Slanted - Demo.otf");
+}
+
+@font-face {
+  font-family: BeerMoney;
+  src: url("../Font/beer money.ttf");
+}
+
+html, body {
+  background-color: #070707;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;
+}
+
+#sidepanel {
+  background-color: #111;
+  position: fixed;
+  padding-top: 80px;
+  width: 0;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#sidepanel a {
+  display: block;
+  margin: 40px 0 40px 0;
+  padding: 0 8px 0 32px;
+  height: 50px;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: BeerMoney;
+  line-height: 50px;
+  color: #818181;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#sidepanel .closebtn {
+  position: absolute;
+  margin: 10px 0 0 0;
+  padding: 8px 0 8px 0;
+  top: 0;
+  right: 25px;
+  height: auto;
+  font-size: 48px;
+}
+
+.openbtn {
+  background-color: teal;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  display: block;
+  margin: 160px 10px 0 auto;
+  padding: 0px 10px;
+  top: 2vh;
+  cursor: pointer;
+  text-align: right;
+  font-size: 3.5vmax;
+  color: red;
+  border: none;
+}
+
+section {
+  background: url("../Images/BlackNoise.png") repeat center center;
+  background-size: contain;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 100vh 0 auto auto auto 100vh;
+      grid-template-rows: 100vh 0 auto auto auto 100vh;
+  grid-row-gap: 30px;
+}
+
+section p {
+  position: relative;
+  font-family: BeerMoney;
+  font-size: 1em;
+  text-align: center;
+  color: lightgrey;
+}
+
+section h1 {
+  position: relative;
+  color: red;
+  font-family: AnotherDanger;
+  font-size: 2.5em;
+  letter-spacing: 8px;
+  text-align: center;
+}
+
+#Main {
+  background: url("../Images/New1.png") no-repeat center center;
+  background-size: cover;
+}
+
+#Main #ScrollDown {
+  position: absolute;
+  top: 96%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#Main h1 {
+  top: 5vh;
+}
+
+#Main h2 {
+  position: relative;
+  top: 7.5vh;
+  font-family: BeerMoney;
+  font-size: 3vmax;
+  letter-spacing: 2px;
+  text-align: center;
+  color: ghostwhite;
+}
+
+#Main h3 {
+  position: relative;
+  top: 20vh;
+  font-family: AnotherDanger;
+  font-size: 2vmax;
+  letter-spacing: 5px;
+  text-align: center;
+  color: ghostwhite;
+}
+
+#Main h3 #CoverPhoto {
+  width: 150px;
+  height: 150px;
+  margin: 5px 0 -20px 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#Main h3 #CoverPhoto:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#Main h3 strong {
+  font-family: BeerMoney;
+  font-size: 7vmax;
+  color: red;
+}
+
+#Apie, #Kontaktai {
+  padding-bottom: 20vh;
+}
+
+#Apie h1, #Kontaktai h1 {
+  top: 15vh;
+}
+
+#Apie div, #Kontaktai div {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  margin-top: 20vh;
+}
+
+#Apie p, #Kontaktai p {
+  margin: 0 20px 0 20px;
+  padding: 10vh 10px 10vh 10px;
+  border-top: 1.5px solid rgba(128, 128, 128, 0.5);
+  border-bottom: 1.5px solid rgba(128, 128, 128, 0.5);
+}
+
+#Apie p mark, #Kontaktai p mark {
+  background-color: inherit;
+  color: red;
+  font-size: 1.2em;
+}
+
+#Apie p a, #Kontaktai p a {
+  text-decoration: none;
+  color: lightgrey;
+  margin-top: 20px;
+}
+
+#Apie p a img, #Kontaktai p a img {
+  position: absolute;
+  margin: 5px 0 0 -40px;
+  height: 35px;
+}
+
+#Dainos {
+  position: relative;
+}
+
+#Dainos ol {
+  position: relative;
+  margin: 10vh 0 20vh 0;
+  color: white;
+  list-style-type: none;
+}
+
+#Dainos ol li {
+  counter-increment: number;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 30px 0 30px 0;
+}
+
+#Dainos ol li span {
+  background-color: rgba(90, 90, 90, 0.2);
+  position: relative;
+  margin: 10px 20px 00 20px;
+  border-radius: 50px;
+  height: 55px;
+  overflow: hidden;
+}
+
+#Dainos ol li span .Progress {
+  content: "";
+  background-color: rgba(151, 151, 151, 0.3);
+  display: block;
+  width: 0%;
+  height: 100%;
+}
+
+#Dainos ol li span .Progress h3 {
+  position: absolute;
+  margin-right: 10px;
+  width: 100%;
+  color: white;
+  font-size: 33px;
+  font-weight: 100;
+  text-align: left;
+  font-family: BeerMoney;
+}
+
+@media (max-width: 568px) {
+  #Dainos ol li span .Progress h3 s {
+    display: none;
+  }
+}
+
+#Dainos ol li span .Progress h3 img {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  opacity: .7;
+  left: -55px;
+  margin-right: -38px;
+}
+
+#Dainos ol li span .Progress h3::before {
+  content: counter(number);
+  display: inline-block;
+  margin-left: 47px;
+  font-size: 45px;
+  text-align: end;
+}
+
+#Dainos ol li h2 {
+  margin-bottom: -20px;
+  padding: 3px 0 3px 23px;
+  font-weight: 100;
+  font-family: BeerMoney;
+  color: white;
+}
+
+@media (min-width: 568px) {
+  #Dainos ol li h2 {
+    display: none;
+  }
+}
+
+#Dainos ol li p {
+  padding: 20px 0 20px 23px;
+  text-align: left;
+}
+
+#Galerija .photo-grid {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 100px;
+  gap: .7rem;
+  -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 240px;
+}
+
+#Galerija .card {
+  background: no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+#Galerija .card.card-tall {
+  grid-row: span 2 / auto;
+}
+
+@media (min-width: 1025px) {
+  #Galerija .card.card-wide {
+    grid-column: span 2 / auto;
+  }
+}
+
+#Galerija .card:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+
+footer {
+  height: 30px;
+  display: block;
+  margin: auto 0 auto 0;
+  color: grey;
+  text-align: center;
+  line-height: 30px;
+  font-size: .75em;
+}
+
+@media (min-width: 1025px) {
+  .openbtn {
+    visibility: hidden;
+  }
+  section {
+    grid-row-gap: 100px;
+  }
+  section div p {
+    font-size: 1.2em;
+  }
+  section h1 {
+    font-size: 4em;
+  }
+  #Main h2 {
+    top: 10vh;
+    font-size: 2em;
+  }
+  #Main h3 {
+    font-size: 2em;
+  }
+  #Main h3 #CoverPhoto {
+    width: 20vh;
+    height: 20vh;
+    margin-bottom: -60px;
+  }
+  #Dainos ol {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  #Dainos ol li {
+    margin: 30px 30px 30px 30px;
+  }
+  #Apie p, #Kontaktai p {
+    margin-left: 5em;
+    margin-right: 5em;
+    padding: 10vh 100px 10vh 100px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

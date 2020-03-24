@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Reformatai</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Simono Daukanto gimnazijos reperių grupė Reformatai. Jaunosios Hip Hop'o žvaigždės Dovydas Šalkauskas, Dovydas Simanauskas, Henrikas Grigalius">
+  <link rel="canonical" href="https://reformatai.tk/">
+  <meta property="og:locale" content="lt_LT">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Reformatai">
+  <meta property="og:description" content="Simono Daukanto gimnazijos reperių grupė Reformatai. Jaunosios Hip Hop'o žvaigždės Dovydas Šalkauskas, Dovydas Simanauskas, Henrikas Grigalius">
+  <meta property="og:url" content="https://reformatai.tk/">
+  <!-- ----------- -->
+
+  <link rel="icon" href="../Images/Logos/rap1.png" type="image/x-icon">
+  <link href="../CSS/style.css" type="text/css" rel="stylesheet">
+
+  <link rel="stylesheet" href="../CSS/main.css">
+  
+  <script src="../Script/green-audio-player.js"></script>
+
+  <script src="../Script/audio.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var widget = new GreenAudioPlayer('.Music-Player', {
+        showTooltips: true,
+        showDownloadButton: false,
+        enableKeystrokes: true});
+      init(widget);
+    });
+    // Side panel
+    function openNav() {
+      if (document.getElementById("sidepanel").style.width === "60%"){
+        document.getElementById("sidepanel").style.width = "0";
+      }
+      else document.getElementById("sidepanel").style.width = "60%";
+    }
+    
+    function closeNav() {
+      document.getElementById("sidepanel").style.width = "0";
+    }
+  </script>
+</head>
+<body>
+  <div id="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#Apie" onclick="closeNav()">Apie</a>
+    <a href="#Dainos" onclick="closeNav()">Dainos</a>
+    <a href="#Galerija" onclick="closeNav()">Galerija</a>
+    <a href="#Kontaktai" onclick="closeNav()">Kontaktai</a>
+  </div>
+  
+  <section>
+    <div id="Main">
+      <h1>REFORMATAI</h1>
+      <h2>Naujieji reperiai<br>reformuojantys Daukantą</h2>
+      <h3>Naujas albumas<br><img id="CoverPhoto" src="../Images/Cover1.jpg" alt="Album cover photo"><br><strong>03.27</strong></h3>
+      <img id="ScrollDown" src="../Images/Logos/Scroll_down_w.png" alt="Scroll down icon">
+    </div>
+    
+    <button class="openbtn" onclick="openNav()">☰</button>
+
+    <div id="Apie">
+      <h1>Apie</h1>
+      <div>
+        <p style="text-align: justify;">
+          <mark style="font-family: AnotherDanger;">Reformatai</mark> - tai Dovydo Šalkausko, Dovydo Simanausko bei Henriko Grigaliaus įkurta repo ir Hip Hop'o grupė.
+          Ši grupė susikūrė 2019 metais ir į pirmąją didžiąją sceną išėjo su debiutiniu singlu <mark>Shimtas dienų</mark>, skirtu S. Daukanto XIX laidos šimtadienio šventei.
+          Po šio pasirodymo grupė susilaukė didelio susidomėjimo ir kibo į darbus.
+          Kartu su mylimuoju Haroldu Vaitiekumi išleido dainą <mark>Mamai</mark>, skirtą mamų dienai.
+          Po šių hitais tapusių dainų, atlikėjai pasirodė kituose įvairiuose mokyklos renginiuose bei kartu su S. Daukanto gimnazijos XX laidos choru įrašė 2019 metų paskutinio skambučio šventės dainą <mark>Paskutinis skambutis</mark>.
+          Atlikėjai, tapę abiturientais, ir toliau reformavo bei garsino Simono Daukanto gimnazijos vardą.
+          Reperiai pasirodė savo XX laidos šimtadienyje bei atliko naująją dainą <mark>Shimtas dienų II</mark>, kuri tapo dar vienu grupės hit'u.<br><br>
+          Po šiek tiek daugiau nei metų gyvavimo reperiai pasiruošę pristatyti savo visų mokslo metų darbą <mark>Kovo 27d.</mark> su debiutiniu albumu <mark>Karštu Veidu Per Subinę</mark>.
+          <i>„Šis albumas - tai Reformatorių palikimas savo gimnazijai“</i> - teigė grupės narys Dovydas Šalkauskas.
+          Albumas yra vaikinų talento ir sunkaus darbo įrodymas bei pirmasis žingsnis į Hip Hop'o metraščius.
+        </p>
+      </div>
+    </div>
+
+    <div id="Dainos">
+      <h1>Dainos</h1>
+      <ol>
+        <li>
+          <span><div class="Progress" onclick="playAudio(this, '../Songs/Reformatai - Shimtas dienų.mp3')">
+            <h3><img class="PlayAudio" src="../Images/Logos/PlayAudio3.png" alt="Play audio icon"> Shimtas dienų</h3>
+          </div></span>
+          <p>Muzika: Dovydas Šalkauskas<br>Žodžiai: Dovydas Šalkauskas, Henrikas Grigalius, Dovydas Simanauskas<br>Išleista: 2019-01-25</p>
+        </li>
+        <li>
+          <span><div class="Progress" onclick="playAudio(this, '../Songs/Reformatai - Mamai ft. MC Haroldas.mp3')">
+            <h3><img class="PlayAudio" src="../Images/Logos/PlayAudio3.png" alt="Play audio icon"> Mamai <s style="text-decoration: none;">ft. MC Haroldas</s></h3>
+          </div></span>
+          <h2>ft. MC Haroldas</h2>
+          <p>Muzika: Dovydas Šalkauskas<br>Žodžiai: Dovydas Šalkauskas, Henrikas Grigalius, Dovydas Simanauskas, Haroldas Vaitiekus<br>Išleista: 2019-05-08</p>
+        </li>
+        <li>
+          <span><div class="Progress" onclick="playAudio(this, '../Songs/Reformatai - Paskutinis Skambutis ft. SDG Choras.mp3')">
+            <h3><img class="PlayAudio" src="../Images/Logos/PlayAudio3.png" alt="Play audio icon"> Paskutinis Skambutis <s style="text-decoration: none;">ft. SDG Choras</s></h3>
+          </div></span>
+          <h2>ft. SDG Choras</h2>
+          <p>Muzika: Edgaras Lubys<br>Žodžiai: Edgaras Lubys, Dovydas Šalkauskas, Henrikas Grigalius, Dovydas Simanauskas<br>Išleista: 2019-05-24</p>
+        </li>
+        <li>
+          <span><div class="Progress" onclick="playAudio(this, '../Songs/Reformatai - Mokytojui.mp3')">
+            <h3><img class="PlayAudio" src="../Images/Logos/PlayAudio3.png" alt="Play audio icon"> Mokytojui</h3>
+          </div></span>
+          <p>Muzika: Dovydas Šalkauskas<br>Žodžiai: Dovydas Šalkauskas, Henrikas Grigalius, Dovydas Simanauskas<br>Išleista: 2019-10-06</p>
+        </li>
+        <li>
+          <span><div class="Progress" onclick="playAudio(this, '../Songs/Reformatai - Go Crazy.mp3')">
+            <h3><img class="PlayAudio" src="../Images/Logos/PlayAudio3.png" alt="Play audio icon"> Go Crazy</h3>
+          </div></span>
+          <p>Muzika: Dovydas Šalkauskas<br>Žodžiai: Dovydas Šalkauskas, Henrikas Grigalius, Dovydas Simanauskas<br>Išleista: 2019-10-18</p>
+        </li>
+        <li>
+          <span><div class="Progress" onclick="playAudio(this, '../Songs/Reformatai - Shimtas dienų II.mp3')">
+            <h3><img class="PlayAudio" src="../Images/Logos/PlayAudio3.png" alt="Play audio icon"> Shimtas dienų II</h3>
+          </div></span>
+          <p>Muzika: Dovydas Šalkauskas<br>Žodžiai: Dovydas Šalkauskas, Henrikas Grigalius, Dovydas Simanauskas<br>Išleista: 2020-02-12</p>
+        </li>
+        <li>
+          <span><div class="Progress" onclick="playAudio(this, '../Songs/Reformatai - Pocket Money ft. Stretcha.mp3')">
+            <h3><img class="PlayAudio" src="../Images/Logos/PlayAudio3.png" alt="Play audio icon"> Pocket Money <s style="text-decoration: none;">ft. Stretcha</s></h3>
+          </div></span>
+          <h2>ft. Stretcha</h2>
+          <p>Muzika: Dovydas Šalkauskas<br>Žodžiai: Dovydas Šalkauskas, Henrikas Grigalius, Dovydas Simanauskas, Stretcha<br>Išleista: 2020-03-10</p>
+        </li>
+        <li>
+          <span><div class="Progress" onclick="playAudio(this, '../Songs/Reformatai - 6 Quid.mp3')">
+            <h3 style="font-size: 35px;"><img class="PlayAudio" src="../Images/Logos/PlayAudio3.png" alt="Play audio icon" style="margin-right: -25px;"> <b style="font-size: 40px; font-weight: 100;">6</b> Quid</h3>
+          </div></span>
+          <p>Muzika: Dovydas Šalkauskas<br>Žodžiai: Dovydas Šalkauskas, Henrikas Grigalius, Dovydas Simanauskas<br>Išleista: 2020-03-27</p>
+        </li>
+        <li>
+          <span><div class="Progress" onclick="playAudio(this, '../Songs/Reformatai - 2 minutes.mp3')">
+            <h3><img class="PlayAudio" src="../Images/Logos/PlayAudio3.png" alt="Play audio icon" style="margin-right: -25px;"> <b style="font-size: 40px; font-weight: 100;">2</b> minutes</h3>
+          </div></span>
+          <p>Muzika: Dovydas Šalkauskas<br>Žodžiai: Dovydas Šalkauskas, Henrikas Grigalius, Dovydas Simanauskas<br>Išleista: 2020-03-27</p>
+        </li>
+        <li>
+          <span><div class="Progress" onclick="playAudio(this, '../Songs/Reformatai - Froze Off.mp3')">
+            <h3><img class="PlayAudio" src="../Images/Logos/PlayAudio3.png" alt="Play audio icon" style="left: -65px;"> Froze Off</h3>
+          </div></span>
+          <p>Muzika: Dovydas Šalkauskas<br>Žodžiai: Dovydas Šalkauskas, Henrikas Grigalius, Dovydas Simanauskas<br>Išleista: 2020-03-27</p>
+        </li>
+        <li>
+          <span><div class="Progress" onclick="playAudio(this, '../Songs/Reformatai - Just Bang.mp3')">
+            <h3><img class="PlayAudio" src="../Images/Logos/PlayAudio3.png" alt="Play audio icon"> Just Bang</h3>
+          </div></span>
+          <p>Muzika: Dovydas Šalkauskas<br>Žodžiai: Dovydas Šalkauskas, Henrikas Grigalius, Dovydas Simanauskas<br>Išleista: 2020-03-27</p>
+        </li>
+        <li>
+          <span><div class="Progress" onclick="playAudio(this, '../Songs/Reformatai - Kairosclerosis.mp3')">
+            <h3><img class="PlayAudio" src="../Images/Logos/PlayAudio3.png" alt="Play audio icon" style="left: -65px;"> Kairosclerosis</h3>
+          </div></span>
+          <p>Muzika: Dovydas Šalkauskas<br>Žodžiai: Dovydas Šalkauskas, Henrikas Grigalius, Dovydas Simanauskas<br>Išleista: 2020-03-27</p>
+        </li>
+        <li>
+          <span><div class="Progress" onclick="playAudio(this, '../Songs/Reformatai - Molly.mp3')">
+            <h3><img class="PlayAudio" src="../Images/Logos/PlayAudio3.png" alt="Play audio icon" style="left: -65px;"> Molly</h3>
+          </div></span>
+          <p>Muzika: Dovydas Šalkauskas<br>Žodžiai: Dovydas Šalkauskas, Henrikas Grigalius, Dovydas Simanauskas<br>Išleista: 2020-03-27</p>
+        </li>
+      </ol>
+    </div>
+
+    <div id="Galerija">
+      <h1>Galerija</h1>
+      <div class="photo-grid">
+        <div class="card card-tall" alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref5.jpg)">
+        </div>
+        <div class="card card-wide" alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref1.jpg)">
+        </div>
+        <!-- <div class="card" alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref2.jpg)">
+        </div> -->
+        <div class="card" alt="Reformatu grupe" style="background-image: url(../Images/Black_front.jpg)">
+        </div>
+        <div class="card" alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref3.jpg)">
+        </div>
+        <div class="card card-tall alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref4.jpg)">
+        </div>
+        <div class="card" alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref6.jpg)">
+        </div>
+        <div class="card" alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref7.jpg)">
+        </div>
+        <div class="card card-tall" alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref9.jpg)">
+        </div>
+        <div class="card card-tall" alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref8.jpg)">
+        </div>
+        <div class="card" alt="Reformatu grupe" style="background-image: url(../Images/Simt/Simt20.jpg)">
+        </div>
+        <!-- <div class="card" alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref11.jpg)">
+        </div> -->
+        <div class="card" alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref21.jpg)">
+        </div>
+        <div class="card" alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref16.jpg)">
+        </div>
+        <div class="card" alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref14.jpg)">
+        </div>
+        <div class="card card-tall card-wide" alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref25.jpg)">
+        </div>
+        <div class="card" alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref13.jpg)">
+        </div>
+        <div class="card" alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref19.jpg)">
+        </div>
+        <div class="card card-wide" alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref15.jpg)">
+        </div>
+        <div class="card" alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref10.jpg)">
+        </div>
+        <div class="card card-tall" alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref17.jpg)">
+        </div>
+        <div class="card" alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref20.jpg)">
+        </div>
+        <div class="card card-wide card-tall" alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref18.jpg)">
+        </div>
+        <div class="card card-tall" alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref23.jpg)">
+        </div>
+        <div class="card card-tall" alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref22.jpg)">
+        </div>
+        <div class="card card-tall" alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref24.jpg)">
+        </div>
+        <div class="card" alt="Reformatu grupe" style="background-image: url(../Images/Ref/Ref12.jpg)">
+        </div>
+        <div class="card" alt="Reformatu grupe" style="background-image: url(../Images/Simt/Simt18.jpg)">
+        </div>
+        <!-- <div class="card" alt="Reformatu grupe" style="background-image: url(../Images/Simt/Simt19.jpg)">
+        </div> -->
+      </div>
+    </div>
+
+    <div id="Kontaktai">
+      <h1>Kontaktai</h1>
+      <div>
+        <p style="line-height: 50px;">Su grupe galima susisiekti šiais būdais:<br>
+        <a href="https://www.youtube.com/channel/UCvdcFgToal9nm9QYfoejBGw"><img src="../Images/Logos/Youtube.png" alt="Youtube logo">Youtube: Reformatai</a><br>
+        <a href="https://www.instagram.com/sdg.reformatai/"><img src="../Images/Logos/IG logo.png" alt="Instagram logo">Instagram: @sdg.reformatai</a><br>
+        <!-- <a href="#Kontaktai"><img src="../Images/Logos/Gmail logo(1).png">Gmail</a>: elpastas@gmail.com -->
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <div class="Music-Player" style="opacity: 0;">
+    <audio crossorigin>
+      <source src="../Songs/Reformatai - 2 minutes.mp3" type="audio/mpeg">Browser doesn't support audio
+    </audio>
+  </div>
+  <footer>©Similiukas 2020</footer>
+</body>
+</html>

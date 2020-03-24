@@ -1,0 +1,193 @@
+header{
+    background-color: rgba(44, 44, 44, 0.9);
+    overflow: hidden;
+    position: relative;
+    ul {
+        list-style-type: none;
+    }
+    li {
+        float: left;
+        margin: -12px 0;
+    }
+    li a {
+        text-decoration: none;
+        font-family: BeerMoney;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        color: red;
+        display: block;
+        padding: 0 10px;
+        position: relative;
+        line-height: 70px;
+    }
+    li a:hover {
+        background-color: rgba(0, 0, 0, 0.25); /*background-color: rgba(0, 0, 0, 0.25);*/
+    }
+}
+/*Active header page*/
+.active {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*Right text in header (REFORMATAI)*/
+#Logo {
+    padding: 0 15px;
+    font-family: AnotherDanger;
+    font-size: 2em;
+    letter-spacing: 3px;
+    color: red;
+    top: 0;
+}
+
+/*Main div container in about page*/
+#About {
+    background-color: rgba(124, 124, 124, 0.3);
+    padding: 2% 4%;
+    margin: 2% 20%;
+}
+
+/*Main div container in contacts page*/
+#Contacts {
+    background-color: rgba(44, 44, 44, 0.9);
+    padding: 2% 4%;
+    margin: 5% 20%;
+}
+
+#Contacts p {
+    text-align: left;
+    color: gray;
+    margin-bottom: -2.5%;
+}
+
+/*Main div container in discography page*/
+#Discography {
+    background-color: rgba(77, 77, 77, 0.275);
+    padding: 2% 2%;
+    margin: 0 17%;
+    overflow: hidden;
+    color: lightgrey; /*lightgrey*/
+}
+
+/*Div container for song info (left div)*/
+#Song-info {
+    float: left;
+    font-family: BeerMoney;
+    width: 50%;
+    p {
+        text-align: left;
+        font-size: 1.1em;
+    }
+    li:hover {
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+}
+
+/*Selected song background (changed with text-change.js)*/
+#Active-song {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+/*Lyrics div container (rigth div)*/
+#Lyrics-div {
+    background-color: rgba(0, 0, 0, 0.1);
+    float: right;
+    width: 50%;
+}
+
+audio {
+    width: 95%;
+    position: relative;
+    left: 2.5%;
+    opacity: .85;
+}
+
+/*Default div h1*/
+div h1 {
+    font-family: BeerMoney;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    top: 0;
+}
+
+/*Defauflt div p*/
+div p {
+    font-size: 1.5em;
+    font-family: BeerMoney;
+    text-align: center;
+    padding: 3% 0;
+}
+
+.Links {
+    display: list-item;
+}
+
+.Hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 768px){
+    h1 {
+        font-size: 7vmax;
+        letter-spacing: 5px;
+    }
+    h2{
+        font-size: 3vmax;
+    }
+
+    header{
+        height: 40px;
+        li a {
+            text-align: center;
+            line-height: inherit;
+        }
+        li a.icon {
+            margin-top: 5px;
+            min-height: auto;
+            position: absolute;
+            top: 0;
+        }
+        li a.icon:hover{
+            background-color: inherit;
+        }
+    }
+    #Links, .Social {
+        display: none;
+    }
+    .Hamburger {
+        display: block;
+    }
+
+    #Links li {
+        text-decoration: none;
+        display: inline-block;
+        float: none;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    #Logo {
+        display: block;
+        text-align: center;
+    }
+    .Logo {
+        width: 100%;
+        font-size: 2vmax;
+        padding-top: 5px;
+    }
+
+    #Discography, #About, #Contacts{
+        position: relative;
+        margin: 0;
+        top: 80px;
+    }
+    div p {
+        font-size: 1em;
+    }
+
+    #Song-info p {
+        font-size: .8em;
+    }
+
+    #Lyrics {
+        font-size: .9em;
+    }
+}
