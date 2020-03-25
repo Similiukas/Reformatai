@@ -12,27 +12,17 @@ function init(widget){
         Songs[i] = name;
         Times[name] = 0;
     }
-    // console.log(Green);
-    // console.log(Songs);
-    // console.log(Times);
-    // changeSong();
-    // console.log(div[0].onclick.arguments);
-    // console.log(div[0].onclick);
-    // console.log(typeof div[0].onclick);
 }
 
 function playAudio(element, path){
     // Green.player.volume = 0;
     if(document.getElementById("Active")) document.getElementById("Active").id = "";
     element.id = "Active";
-    // console.log(Times);
-    // console.log(Green);
     document.getElementsByClassName("green-audio-player")[0].style.opacity = "1";
     document.getElementsByClassName("green-audio-player")[0].style.pointerEvents = "all";
     document.getElementsByClassName("progress__pin")[0].style.pointerEvents = "all";
 
     // console.log("Green:",Green); // The whole green audio player class
-    // console.log(path);
 
     // If changed the song
     if(path != lastPath){
