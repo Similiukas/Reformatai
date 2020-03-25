@@ -133,6 +133,7 @@ var GreenAudioPlayer = /*#__PURE__*/function () {
     }
   }
 
+  // All the main events (event loop I guess) is in the initEvents key which is called by ~111 line (this.initEvents() above if autoplay)
   _createClass(GreenAudioPlayer, [{
     key: "initEvents",
     value: function initEvents() {
@@ -272,9 +273,13 @@ var GreenAudioPlayer = /*#__PURE__*/function () {
       this.progress.setAttribute('aria-valuenow', percent);
       this.progress.style.width = "".concat(percent, "%");
 
-      // Setting active song progress bar width
+      // Setting active song progress bar width in the section div ol
       var width = this.progress.style.width;
       document.getElementById("Active").style.width = width;
+      // console.log(Event);  // Can put Event int the updateProgress(Event) to check what calls the function
+      if(percent == 100){
+        changeSong();
+      }
 
       this.currentTime.textContent = GreenAudioPlayer.formatTime(current);
     }
